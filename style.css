@@ -92,12 +92,11 @@ section {
     transition: all 0.4s ease;
 }
 
-.skills span i {
-    font-size: 2.5rem; /* Icon bada karein */
-    margin-bottom: 10px;
-    background: linear-gradient(45deg, #00c6a7, #1e90ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.skill-card:hover {
+    border-color: #00c6a7; /* Teal color glow */
+    box-shadow: 0 0 20px rgba(0, 198, 167, 0.4);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .skills span:hover {
