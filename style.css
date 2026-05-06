@@ -1,0 +1,166 @@
+/* ================= GLOBAL ================= */
+body {
+    background-color: #0a0a0a;
+    background-image: 
+        radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.15), transparent),
+        radial-gradient(circle at 20% 80%, rgba(0, 198, 167, 0.15), transparent);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Glassmorphism Card */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Titles & Text */
+.gradient-text {
+    font-size: clamp(40px, 8vw, 70px); /* Responsive font size */
+    font-weight: 800;
+    background: linear-gradient(90deg, #00c6a7, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(0, 198, 167, 0.2);
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: rgba(10, 10, 10, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ================= BUTTONS ================= */
+.btn-success {
+    background: linear-gradient(45deg, #00c6a7, #1e90ff);
+    border: none;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 198, 167, 0.3);
+}
+
+/* ================= ABOUT & IMAGES ================= */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Blob shape */
+    border: 5px solid rgba(255,255,255,0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills span {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Icon upar, text niche */
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.skills span i {
+    font-size: 2.5rem; /* Icon bada karein */
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #00c6a7, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills span:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: #00c6a7;
+    box-shadow: 0 10px 30px rgba(0, 198, 167, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ================= EXPERIENCE ================= */
+.experience-section {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00c6a7, #1e90ff);
+}
+
+.exp-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    margin: 0 0 30px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.exp-card:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.dot {
+    position: absolute;
+    left: -40px;
+    top: 30px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00c6a7, #1e90ff);
+    box-shadow: 0 0 10px #00c6a7;
+}
+
+/* ================= CONTACT FORM ================= */
+.form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #00c6a7 !important;
+    box-shadow: none !important;
+}
